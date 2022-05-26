@@ -19,6 +19,7 @@ defmodule ProjectManagementApiWeb.Router do
     pipe_through :api
 
     resources "/projects", ProjectController, only: [:index, :show]
+    resources "/tasks", TaskController, only: [:index, :show]
   end
 
   # Enables LiveDashboard only for development

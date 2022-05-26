@@ -12,7 +12,12 @@ defmodule ProjectManagementApiWeb.TaskView do
 
   def render("task.json", %{task: task}) do
     %{
-      id: task.id
+      id: task.id,
+      name: task.name,
+      effort: task.effort,
+      notes: task.notes,
+      finished: task.finished,
+      project_id: task.project_id
     }
   end
 end
