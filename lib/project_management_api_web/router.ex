@@ -14,16 +14,10 @@ defmodule ProjectManagementApiWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", ProjectManagementApiWeb do
-    pipe_through :browser
-
-    get "/", PageController, :index
-  end
-
   # Other scopes may use custom stacks.
-  # scope "/api", ProjectManagementApiWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", ProjectManagementApiWeb do
+    pipe_through :api
+  end
 
   # Enables LiveDashboard only for development
   #
