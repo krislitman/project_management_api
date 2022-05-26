@@ -15,8 +15,10 @@ defmodule ProjectManagementApiWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  scope "/api", ProjectManagementApiWeb do
+  scope "/api/v1", ProjectManagementApiWeb do
     pipe_through :api
+
+    resources "/projects", ProjectController, only: [:index, :show]
   end
 
   # Enables LiveDashboard only for development
