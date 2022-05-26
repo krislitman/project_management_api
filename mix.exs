@@ -49,7 +49,8 @@ defmodule ProjectManagementApi.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:ja_serializer, ">= 0.0.0"}
+      {:ja_serializer, github: "vt-elixir/ja_serializer"},
+      {:poison, "~> 3.1"}
     ]
   end
 
