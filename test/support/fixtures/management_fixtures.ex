@@ -18,4 +18,18 @@ defmodule ProjectManagementApi.ManagementFixtures do
 
     project
   end
+
+  @doc """
+  Generate a task.
+  """
+  def task_fixture(attrs \\ %{}) do
+    {:ok, task} =
+      attrs
+      |> Enum.into(%{
+
+      })
+      |> ProjectManagementApi.Management.create_task()
+
+    task
+  end
 end
