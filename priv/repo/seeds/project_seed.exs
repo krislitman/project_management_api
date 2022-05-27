@@ -14,7 +14,7 @@ defmodule CreateProjects do
             title: "My first Elixir Project",
             description: "It is epic"
         }
-        create_projects_loop(msg, n - 1)
+        create_projects_loop(n - 1)
     end
  end
 
