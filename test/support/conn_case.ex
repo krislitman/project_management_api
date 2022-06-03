@@ -16,6 +16,7 @@ defmodule ProjectManagementApiWeb.ConnCase do
   """
 
   use ExUnit.CaseTemplate
+  import Projects.Factory
 
   using do
     quote do
